@@ -1,0 +1,161 @@
+/* 1. CSS Basics + Selectors */
+body {
+  font-family: Arial, sans-serif; /* 7 Typography */
+  margin: 0; /* 2 Properties */
+  background: #f5f5f5; /* 8 Background */
+}
+
+/* 11 Specificity demo */
+h1 {
+  color: white;
+}
+
+/* 6 Effects */
+header {
+  background: linear-gradient(to right, blue, purple); /* 8 Gradient */
+  text-align: center;
+  padding: 20px; /* 3 Box model */
+}
+
+/* 4 Layout (Flexbox) */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: black;
+  padding: 10px;
+}
+
+/* 5 Selectors */
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Pseudo-class */
+nav a:hover {
+  color: yellow;
+}
+
+/* 3 Box Model */
+section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px; /* 6 Effects */
+  box-shadow: 0 0 10px gray; /* 6 Effects */
+}
+
+/* Image styling */
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* 6 Effects */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* 2 Shorthand */
+th {
+  background: black;
+  color: white;
+}
+
+/* Form styling */
+input, textarea, select {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* Button effect */
+input[type="submit"] {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  transition: 0.3s; /* 9 Transition */
+}
+
+/* Hover animation */
+input[type="submit"]:hover {
+  background: red;
+  transform: scale(1.05); /* 6 Transform */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: black;
+  color: white;
+}
+
+/* 4 Layout (Grid example small) */
+#skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* 10 Media Query */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Smooth background */
+body {
+  background: #f8f9fa;
+}
+
+/* Section spacing improve */
+section {
+  padding: 25px;
+}
+
+/* Card hover effect */
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Navbar link hover (Bootstrap override) */
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Button rounded */
+.btn {
+  border-radius: 20px;
+}
+
+/* Button hover */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Heading spacing */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer text */
+footer {
+  font-size: 14px;
+}
